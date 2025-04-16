@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Box sx={{ bgcolor: 'background.paper', p: 2 }} component="footer">
       <Typography variant="body2" color="text.secondary" align="center">
-        © {new Date().getFullYear()} Resume Builder
+        © {new Date().getFullYear()} Dinesh K
       </Typography>
     </Box>
   );
