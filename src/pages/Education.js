@@ -111,6 +111,7 @@ const Education = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
+                required
                 fullWidth
                 label="Field of Study"
                 name="fieldOfStudy"
@@ -120,6 +121,7 @@ const Education = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
+                required
                 fullWidth
                 label="Start Date"
                 name="startDate"
@@ -131,6 +133,7 @@ const Education = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <TextField
+                required
                 fullWidth
                 label="End Date (or expected)"
                 name="endDate"
@@ -142,6 +145,7 @@ const Education = () => {
             </Grid>
             <Grid item xs={12}>
               <TextField
+                required
                 fullWidth
                 label="Description"
                 name="description"

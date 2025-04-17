@@ -43,6 +43,7 @@ const Summary = () => {
           onChange={handleChange}
           variant="outlined"
           placeholder="Briefly describe your professional background and skills"
+          required
         />
 
         <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 4 }}>

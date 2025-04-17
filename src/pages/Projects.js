@@ -103,6 +103,7 @@ const Projects = () => {
                 value={currentProject.technologies}
                 onChange={handleChange}
                 placeholder="Comma separated list of technologies"
+                required
               />
             </Grid>
             <Grid item xs={12}>
@@ -112,6 +113,7 @@ const Projects = () => {
                 name="url"
                 value={currentProject.url}
                 onChange={handleChange}
+                required
               />
             </Grid>
             <Grid item xs={12}>
