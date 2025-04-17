@@ -169,7 +169,9 @@ const PersonalInfo = () => {
           <Button variant="outlined" onClick={() => navigate('/')}>
             Back
           </Button>
-          <Button type="submit" variant="contained">
+          <Button type="submit" variant="contained" 
+          disabled={!formData.firstName || !formData.lastName || !formData.email}
+          >
             Next: Summary
           </Button>
         </Box>

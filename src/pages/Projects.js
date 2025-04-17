@@ -185,6 +185,7 @@ const Projects = () => {
           <Button 
             variant="contained" 
             onClick={handleSaveAndContinue}
+            disabled={projects.length === 0}
           >
             Preview Resume
           </Button>

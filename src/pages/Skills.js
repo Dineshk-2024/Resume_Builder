@@ -192,7 +192,7 @@ const Skills = () => {
             <Button variant="outlined" onClick={() => navigate('/experience')}>
               Back
             </Button>
-            <Button variant="contained" onClick={handleSaveAndContinue}>
+            <Button variant="contained" onClick={handleSaveAndContinue} disabled={skills.length === 0}>
               Next: Projects
             </Button>
           </Box>

@@ -50,7 +50,7 @@ const Summary = () => {
           <Button variant="outlined" onClick={handleBack}>
             Back
           </Button>
-          <Button variant="contained" onClick={handleSaveAndNext}>
+          <Button variant="contained" onClick={handleSaveAndNext} disabled={summary.length === 0}>
             Next: Education
           </Button>
         </Box>
