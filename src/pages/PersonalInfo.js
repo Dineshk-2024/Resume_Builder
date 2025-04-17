@@ -47,7 +47,7 @@ const PersonalInfo = () => {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ mt: 12 }}>
       <Box component="form" onSubmit={handleSubmit} sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom>
           Personal Information

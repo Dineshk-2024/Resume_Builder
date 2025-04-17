@@ -1,3 +1,5 @@
+// Updated Template3.jsx to support section reordering based on sectionOrder
+
 import React, { forwardRef, useContext } from 'react';
 import { AppContext } from '../contexts/AppContext';
 import {
@@ -137,6 +139,20 @@ const Template3 = forwardRef((props, ref) => {
     </Box>
   );
 
+  const renderMainSections = () => {
+    const sectionMap = {
+      summary: renderSummary,
+      experience: renderExperience,
+      education: renderEducation,
+      projects: renderProjects,
+    };
+
+    return sectionOrder.map((sectionKey) => {
+      const renderFn = sectionMap[sectionKey];
+      return renderFn ? renderFn() : null;
+    });
+  };
+
   return (
     <Box
       ref={ref}
@@ -157,10 +173,7 @@ const Template3 = forwardRef((props, ref) => {
 
       {/* Main */}
       <Main>
-        {sectionOrder.includes('summary') && renderSummary()}
-        {sectionOrder.includes('experience') && renderExperience()}
-        {sectionOrder.includes('education') && renderEducation()}
-        {sectionOrder.includes('projects') && renderProjects()}
+        {renderMainSections()}
       </Main>
     </Box>
   );

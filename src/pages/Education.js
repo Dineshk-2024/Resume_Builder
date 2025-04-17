@@ -81,7 +81,7 @@ const Education = () => {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ mt: 12 }}>
       <Box sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom>
           Education
@@ -195,7 +195,7 @@ const Education = () => {
         )}
 
         <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 4 }}>
-          <Button variant="outlined" onClick={() => navigate('/personal-info')}>
+          <Button variant="outlined" onClick={() => navigate('/summary')}>
             Back
           </Button>
           <Button 

@@ -77,7 +77,7 @@ const Projects = () => {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{ mt: 12 }}>
       <Box sx={{ mt: 4 }}>
         <Typography variant="h4" gutterBottom>
           Projects

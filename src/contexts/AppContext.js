@@ -24,7 +24,7 @@ export const AppProvider = ({ children }) => {
     skills: [],
     projects: [],
   });
-  
+
   const [activeTemplate, setActiveTemplate] = useLocalStorage('activeTemplate', 'template1');
   const [darkMode, setDarkMode] = useLocalStorage('darkMode', false);
   const [sectionOrder, setSectionOrder] = useLocalStorage('sectionOrder', [
@@ -51,16 +51,19 @@ export const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{
-      resumeData,
-      updateResumeData,
-      activeTemplate,
-      setActiveTemplate,
-      darkMode,
-      setDarkMode,
-      sectionOrder,
-      moveSection
-    }}>
+    <AppContext.Provider
+      value={{
+        resumeData,
+        updateResumeData,
+        activeTemplate,
+        setActiveTemplate,
+        darkMode,
+        setDarkMode,
+        sectionOrder,
+        setSectionOrder,
+        moveSection
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

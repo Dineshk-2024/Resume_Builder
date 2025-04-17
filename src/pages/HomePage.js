@@ -14,7 +14,7 @@ const HomePage = () => {
   ];
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ mt: 12 }}>
       <Box sx={{ my: 4 }}>
         <Typography variant="h3" gutterBottom>
           Build Your Perfect Resume
